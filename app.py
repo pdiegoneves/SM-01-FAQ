@@ -36,3 +36,19 @@ with st.expander("Posso rodar o streamlit em outra porta?"):
 
 with st.expander("Como adicionar gráficos em um aplicativo Streamlit?"):
     st.markdown("Você pode adicionar gráficos em um aplicativo Streamlit utilizando bibliotecas de visualização de dados como **Matplotlib, Seaborn e Plotly**.'")
+    st.markdown("Por exemplo, para exibir um gráfico Matplotlib, você pode usar st.pyplot(fig)")
+    st.markdown("> onde fig é a figura gerada pelo Matplotlib")
+
+st.divider()
+
+col1, col2 = st.columns(2)
+
+with col1:
+    with st.container(border=True):
+        st.markdown("###### Curso")
+        st.text("Streamlit Mastery")
+
+with col2:
+    with st.container(border=True):
+        st.markdown("###### Autor")
+        st.text("Diego Neves")
